@@ -1,0 +1,8 @@
+{
+  "name": "schedulerTest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "5f72bfa2"
+}
