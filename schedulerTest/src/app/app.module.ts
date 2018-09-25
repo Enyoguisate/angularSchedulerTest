@@ -5,25 +5,23 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { NgCalendarModule  } from 'ionic2-calendar';
+
 import { EventModalModule } from '../pages/event-modal/event-modal.module';
+import { TabsPageModule } from '../pages/tabs/tabs.module';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    NgCalendarModule,
-    EventModalModule
+    EventModalModule,
+    TabsPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   providers: [
     StatusBar,

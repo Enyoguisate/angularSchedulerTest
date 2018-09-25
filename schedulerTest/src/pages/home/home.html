@@ -1,21 +1,22 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      {{ viewTitle }}
+      <!-- {{ viewTitle }} -->
+      <h1>Home</h1>
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="addEvent()"><ion-icon name="add"></ion-icon></button>
+      <!-- <button ion-button icon-only (click)="addEvent()"><ion-icon name="add"></ion-icon></button>
       <button ion-button [disabled]="isToday" (click)="today()">Today</button>
       <button ion-button (click)="changeMode('month')">Month</button>
       <button ion-button (click)="changeMode('week')">Week</button>
       <button ion-button (click)="changeMode('day')">Day</button>
-      <button ion-button (click)="loadEvents()">Load Events</button>
+      <button ion-button (click)="loadEvents()">Load Events</button> -->
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <calendar 
+  <!-- <calendar 
     [eventSource]="calendar.eventSource" 
     [calendarMode]="calendar.mode" 
     [currentDate]="calendar.currentDate"
@@ -26,5 +27,5 @@
     [step]="calendar.step" 
     [locale]="calendar.locale" 
     class="calendar">
-  </calendar>
+  </calendar> -->
 </ion-content>

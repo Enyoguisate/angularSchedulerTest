@@ -1,0 +1,17 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Scheduler</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only item-end (click)="addEvent()"><ion-icon name="add"></ion-icon></button>
+    </ion-buttons>    
+  </ion-navbar>
+  
+  
+</ion-header>
+
+
+<ion-content padding>
+  <angular2-fullcalendar #calendar [options]="calendarOptions"></angular2-fullcalendar>
+</ion-content>

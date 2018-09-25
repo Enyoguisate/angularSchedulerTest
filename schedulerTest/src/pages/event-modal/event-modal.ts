@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import * as moment from 'moment';
+import { EventsInterface } from '../prime-ng/calendar-options.interface';
  
 @IonicPage()
 @Component({
@@ -9,13 +10,18 @@ import * as moment from 'moment';
 })
 export class EventModalPage {
  
-  event = { startTime: new Date().toISOString(), endTime: new Date().toISOString(), allDay: false };
+  event: EventsInterface = { title: 'empty title', start: new Date().toISOString(), end: new Date().toISOString()};
   minDate = new Date().toISOString();
- 
-  constructor(public navCtrl: NavController, private navParams: NavParams, public viewCtrl: ViewController) {
+  // allDay: boolean;
+
+  constructor(
+    public navCtrl: NavController, 
+    private navParams: NavParams, 
+    public viewCtrl: ViewController
+    ) {
     let preselectedDate = moment(this.navParams.get('selectedDay')).format();
-    this.event.startTime = preselectedDate;
-    this.event.endTime = preselectedDate;
+    this.event.start = preselectedDate;
+    this.event.end = preselectedDate;
   }
  
   cancel() {
